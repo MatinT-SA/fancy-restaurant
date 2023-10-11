@@ -30,7 +30,15 @@ const OUR_FOOD_DATA = [
 ];
 
 const AvailableMeals = () => {
-    const ourMeals = OUR_FOOD_DATA.map(food => <MealItem key={food.id} name={food.name} description={food.description} price={food.price} />);
+    const ourMeals = OUR_FOOD_DATA.map(food =>
+        <MealItem
+            id={food.id}
+            key={food.id}
+            name={food.name}
+            description={food.description}
+            price={food.price}
+        />
+    );
 
     return (
         <section className={classes.foods}>
