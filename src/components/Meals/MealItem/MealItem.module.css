@@ -7,7 +7,49 @@
 }
 
 .meal h3 {
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 15px 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    transition: color 0.2s, transform .3s;
+}
+
+.meal h3:hover {
+    background: transparent;
+    background-image: linear-gradient(to right, 45deg, rgba(0, 0, 0, .6), #ff5733, #15a9c2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 2;
+    animation: gradient 5s linear infinite;
+    transform: scale(1.2) translateX(3rem);
+}
+
+@keyframes gradient {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: #15a9c2;
+    }
+
+    50% {
+        color: #15633e;
+    }
+
+    75% {
+        color: #ff5733
+    }
+
+    87% {
+        color: #771372;
+    }
+
+    100% {
+        color: black;
+    }
 }
 
 .description {
@@ -17,6 +59,12 @@
 .price {
     margin-top: 0.25rem;
     font-weight: bold;
-    color: #ad5502;
+    color: #0c7a75;
     font-size: 1.25rem;
+    transition: .2s all ease-out;
+}
+
+.price:hover {
+    cursor: default;
+    transform: translateX(5px);
 }

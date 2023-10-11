@@ -6,7 +6,7 @@ const OUR_FOOD_DATA = [
     {
         id: 'f1',
         name: 'Pizza',
-        descritpion: 'Beloved and iconic dish consists of flat dough, tomato sauce and cheese',
+        description: 'Beloved and iconic dish consists of flat dough, tomato sauce and cheese',
         price: 6.65,
     },
     {
