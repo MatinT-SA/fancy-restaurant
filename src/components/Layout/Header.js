@@ -3,12 +3,12 @@ import classes from './Header.module.css'
 import Pizza from '../../assets/pizza.jpg'
 import HeaderCartButton from "./HeaderCartButton";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <Fragment>
             <header className={classes.header}>
                 <h1>Fancy Restaurant</h1>
-                <HeaderCartButton />
+                <HeaderCartButton onClick={props.onShowCart} />
             </header>
             <div className={classes["our-image"]}>
                 <img src={Pizza} alt='Delicious Pizza' />
