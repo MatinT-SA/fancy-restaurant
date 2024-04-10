@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  
+  background:-moz-linear-gradient(90deg, rgba(137, 74, 137, 1) 0%, rgba(144, 0, 255, 1) 51%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, rgba(137, 74, 137, 1) 0%, rgba(144, 0, 255, 1) 51%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, rgba(137, 74, 137, 1) 0%, rgba(144, 0, 255, 1) 51%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9000FF', endColorstr='#894A89', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, rgba(137, 74, 137, 1) 0%, rgba(144, 0, 255, 1) 51%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, rgba(137, 74, 137, 1) 0%, rgba(144, 0, 255, 1) 51%);
+
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.header h1 {
+  transform: scale(1);
+  cursor: pointer;
+  text-shadow: 4px 6px 5px rgba(38, 84, 233, 0.699);
+  padding: 10px 26px;
+}
+
+.header h1:hover {
+  color: red;
+  animation: pageTitleHover 2s infinite ease-out;
+}
+
+.our-image {
+  width: 100%;
+  height: 30rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.our-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(4deg) translateY(-4rem) translateX(-3rem);
+}
+
+@keyframes pageTitleHover {
+  0% {
+    transform: scale(1) rotate(0deg) skew(-5deg);
+  }
+
+  16% {
+    transform: scale(1.05) rotate(-5deg) skew(5deg);
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 3px rgb(25, 163, 48);
+    letter-spacing: -5px;
+    color: rgb(0, 204, 255);
+  }
+
+  33% {
+    transform: scale(1.1) rotate(10deg) skew(7deg);
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+
+  50% {
+    transform: scale(1.1) rotate(-7deg);
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 5px rgba(231, 151, 165, .8);
+    letter-spacing: -2px;
+    color: chocolate;
+  }
+
+  75% {
+    transform: scale(1.5) rotate(5deg) skew(10deg);
+    letter-spacing: 2px;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg) skew(-5deg);
+    text-shadow: 4px 4px 5px lightskyblue;
+    color: rgba(230, 255, 7, 0.897);
+  }
+}

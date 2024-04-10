@@ -1,0 +1,60 @@
+.button {
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, .4);
+    background: rgba(255, 136, 0, 0.6);
+    padding: 0;
+    letter-spacing: 0.2em;
+}
+
+.button:hover .button-front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-front {
+    display: block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 24px;
+    transform: translateY(-7px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+    background: rgb(255, 136, 0);
+}
+
+.button:active .button-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.icon {
+    border-radius: 50px;
+    margin: 30px 20px 0 0;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, .3);
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background: green;
+    color: white;
+}
+
+.text{
+    text-shadow: 4px 6px 5px rgba(38, 84, 233, 0.699);
+    color: white;
+    transition: color .2s ease-in;
+}
+
+.button:hover .text{
+    color: rgb(24, 119, 15);
+    text-decoration: underline;
+}
