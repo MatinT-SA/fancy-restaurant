@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fancy-restaurant/static/css/main.1e354ee7.css",
-    "main.js": "/fancy-restaurant/static/js/main.f2d97454.js",
+    "main.css": "/fancy-restaurant/static/css/main.c272a9eb.css",
+    "main.js": "/fancy-restaurant/static/js/main.23bdda0f.js",
     "static/media/pizza.jpg": "/fancy-restaurant/static/media/pizza.5f0988758b423edf2022.jpg",
     "index.html": "/fancy-restaurant/index.html",
-    "main.1e354ee7.css.map": "/fancy-restaurant/static/css/main.1e354ee7.css.map",
-    "main.f2d97454.js.map": "/fancy-restaurant/static/js/main.f2d97454.js.map"
+    "main.c272a9eb.css.map": "/fancy-restaurant/static/css/main.c272a9eb.css.map",
+    "main.23bdda0f.js.map": "/fancy-restaurant/static/js/main.23bdda0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e354ee7.css",
-    "static/js/main.f2d97454.js"
+    "static/css/main.c272a9eb.css",
+    "static/js/main.23bdda0f.js"
   ]
 }
