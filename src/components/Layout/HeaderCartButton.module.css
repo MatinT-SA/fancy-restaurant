@@ -48,13 +48,39 @@
     color: white;
 }
 
-.text{
+.text {
     text-shadow: 4px 6px 5px rgba(38, 84, 233, 0.699);
     color: white;
     transition: color .2s ease-in;
 }
 
-.button:hover .text{
+.button:hover .text {
     color: rgb(24, 119, 15);
     text-decoration: underline;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
